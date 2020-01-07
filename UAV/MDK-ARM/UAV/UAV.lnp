@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"uav\mission.o"
+"uav\startup_stm32f103xb.o"
+"uav\main.o"
+"uav\gpio.o"
+"uav\adc.o"
+"uav\tim.o"
+"uav\stm32f1xx_it.o"
+"uav\stm32f1xx_hal_msp.o"
+"uav\stm32f1xx_hal_gpio_ex.o"
+"uav\stm32f1xx_hal_adc.o"
+"uav\stm32f1xx_hal_adc_ex.o"
+"uav\stm32f1xx_hal_tim.o"
+"uav\stm32f1xx_hal_tim_ex.o"
+"uav\stm32f1xx_hal.o"
+"uav\stm32f1xx_hal_rcc.o"
+"uav\stm32f1xx_hal_rcc_ex.o"
+"uav\stm32f1xx_hal_gpio.o"
+"uav\stm32f1xx_hal_dma.o"
+"uav\stm32f1xx_hal_cortex.o"
+"uav\stm32f1xx_hal_pwr.o"
+"uav\stm32f1xx_hal_flash.o"
+"uav\stm32f1xx_hal_flash_ex.o"
+"uav\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "UAV\UAV.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UAV.map" -o UAV\UAV.axf
